@@ -14,7 +14,7 @@ module.exports = {
       'plugin:react-hooks/recommended',
       'plugin:jsx-a11y/recommended',
       'plugin:promise/recommended',
-      // 'prettier',
+      'prettier',
     ],
     globals: {
       L: true,
