@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-import { Footer as ASCFooter, FooterTop, Row, Column, FooterSection, themeSpacing } from "@amsterdam/asc-ui";
+import { Footer as ASCFooter, FooterTop, Link, Row, Column, FooterSection, themeSpacing } from "@amsterdam/asc-ui";
 
 const StyledFooter = styled(ASCFooter)`
   margin-top: ${themeSpacing(18)};
@@ -17,11 +17,7 @@ const Footer = () => {
               <ul>
                 <li>Bel dan het gemeentelijk informatienummer 14 020, op werkdagen van 08.00 tot 18.00 uur.</li>
                 <li>
-                  Of stuur een e-mail naar:{" "}
-                  <a href="mailto:mailto:subsidies@amsterdam.nl?Subject=Vraag%20subsidieregister">
-                    Mailbox subsidieregister
-                  </a>
-                  .
+                  Of stuur een e-mail naar.
                 </li>
               </ul>
             </FooterSection>
@@ -33,7 +29,9 @@ const Footer = () => {
                 vindt.
               </p>
 
-              <a href="https://www.amsterdam.nl/">&gt; Naar Amsterdam.nl</a>
+              <Link darkBackground href="https://www.amsterdam.nl/" variant="inline" inList>
+                Naar Amsterdam.nl
+              </Link>
             </FooterSection>
           </Column>
         </Row>

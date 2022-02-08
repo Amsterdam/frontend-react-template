@@ -1,4 +1,3 @@
-// import styled from "styled-components";
 import { Link } from "react-router-dom";
 import { Header as ASCHeader, MenuItem, MenuButton, MenuInline } from "@amsterdam/asc-ui";
 
