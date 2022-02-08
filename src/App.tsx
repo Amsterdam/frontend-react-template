@@ -1,7 +1,9 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { GlobalStyle, ThemeProvider, Row, Column } from "@amsterdam/asc-ui";
+
 import Header from "./components/Header";
+import Footer from "./components/Footer";
 
 console.log(1);
 function App() {
@@ -19,6 +21,12 @@ function App() {
           <Row>
             <Column span={12}>
               <Header />
+            </Column>
+          </Row>
+
+          <Row>
+            <Column span={12}>
+              <Footer />
             </Column>
           </Row>
         </Router>
