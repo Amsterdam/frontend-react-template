@@ -4,6 +4,8 @@
   "private": true,
   "dependencies": {
     "@amsterdam/arm-core": "^0.9.0",
+    "@amsterdam/asc-assets": "^0.28.0",
+    "@amsterdam/asc-ui": "^0.28.0",
     "@amsterdam/react-maps": "^0.12.0",
     "@testing-library/jest-dom": "^5.16.2",
     "@testing-library/react": "^12.1.2",
