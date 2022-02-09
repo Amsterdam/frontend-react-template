@@ -30,9 +30,7 @@ function App() {
             </Column>
           </Row>
 
-          
-              <Footer />
-          
+          <Footer />
         </Router>
       </ThemeProvider>
     </React.StrictMode>
