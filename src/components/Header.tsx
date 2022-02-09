@@ -5,7 +5,7 @@ const Header = () => {
   return (
     <ASCHeader
       tall={false}
-      title="Frontend React Project"
+      title="Frontend React Template"
       homeLink="/"
       fullWidth
       css={{ zIndex: 20 }}
