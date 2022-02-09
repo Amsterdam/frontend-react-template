@@ -4,7 +4,7 @@ import Header from "./Header";
 
 describe("Header", () => {
   it("renders correctly", () => {
-    render(withTheme(<Header/>));
+    render(withTheme(<Header />));
 
     expect(screen.getByTestId("header")).toBeInTheDocument();
 
@@ -12,4 +12,3 @@ describe("Header", () => {
     expect(screen.getByText("Kaart")).toBeInTheDocument();
   });
 });
-

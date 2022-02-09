@@ -14,7 +14,7 @@ const StyledDiv = styled.div`
 
 const Map = () => {
   return (
-    <StyledDiv>
+    <StyledDiv data-testid="map">
       <div>
         <Heading>Kaarten</Heading>
       </div>

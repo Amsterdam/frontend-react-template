@@ -5,6 +5,7 @@ const Header = () => {
   return (
     <ASCHeader
       tall={false}
+      data-testid="header"
       title="Frontend React Template"
       homeLink="/"
       fullWidth
