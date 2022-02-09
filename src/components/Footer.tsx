@@ -1,6 +1,15 @@
 import styled from "styled-components";
 
-import { Footer as ASCFooter, FooterTop, Link, Row, Column, FooterSection, FooterBottom, themeSpacing } from "@amsterdam/asc-ui";
+import {
+  Footer as ASCFooter,
+  FooterTop,
+  Link,
+  Row,
+  Column,
+  FooterSection,
+  FooterBottom,
+  themeSpacing,
+} from "@amsterdam/asc-ui";
 
 const StyledFooter = styled(ASCFooter)`
   margin-top: ${themeSpacing(18)};
@@ -34,13 +43,13 @@ const Footer = () => {
         </Row>
       </FooterTop>
       <FooterBottom>
-          <Link href="/" inList>
-            Privacy and cookies
-          </Link>
-          <Link href="/" inList>
-            About this site
-          </Link>
-        </FooterBottom>
+        <Link href="/" inList>
+          Privacy and cookies
+        </Link>
+        <Link href="/" inList>
+          About this site
+        </Link>
+      </FooterBottom>
     </StyledFooter>
   );
 };
