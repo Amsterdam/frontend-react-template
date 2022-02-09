@@ -5,7 +5,7 @@ import { GlobalStyle, ThemeProvider, Row, Column } from "@amsterdam/asc-ui";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Home from "./components/Home";
-import Kaart from "./components/Kaart";
+import Map from "./components/Map";
 
 console.log(1);
 function App() {
@@ -25,7 +25,7 @@ function App() {
             <Column span={12}>
               <Routes>
                 <Route path="/home" element={<Home />} />
-                <Route path="/kaart" element={<Kaart />} />
+                <Route path="/kaart" element={<Map />} />
               </Routes>
             </Column>
           </Row>

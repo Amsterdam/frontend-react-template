@@ -1,9 +1,9 @@
 import "leaflet/dist/leaflet.css";
 import styled from "styled-components";
-import { Map, ViewerContainer, BaseLayer, Zoom } from "@amsterdam/arm-core";
+import { Map as ASCMap, ViewerContainer, BaseLayer, Zoom } from "@amsterdam/arm-core";
 import { Heading } from "@amsterdam/asc-ui";
 
-const StyledMap = styled(Map)`
+const StyledMap = styled(ASCMap)`
   width: 100%;
   height: 400px;
 `;
@@ -12,7 +12,7 @@ const StyledDiv = styled.div`
   width: 100%;
 `;
 
-const Kaart = () => {
+const Map = () => {
   return (
     <StyledDiv>
       <div>
@@ -29,4 +29,4 @@ const Kaart = () => {
   );
 };
 
-export default Kaart;
+export default Map;
