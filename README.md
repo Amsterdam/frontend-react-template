@@ -4,7 +4,7 @@ This project can be used to create a new frontend react project from scractch fo
 
 Also this project uses [github actions](https://github.com/Amsterdam/frontend-react-template/actions) for CI deployment.
 
-If you want to use a form utility we suggest you use: `react-hook-form`.
+If you want to use a form utility we suggest you use: [`react-hook-form`](https://www.npmjs.com/package/react-hook-form).
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
