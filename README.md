@@ -1,6 +1,8 @@
 # Frontend React Template
 
-This project can be used to create a new frontend react project from scractch for projects within comunity of Amsterdam.  
+This project can be used to create a new frontend react project from scractch for projects within comunity of Amsterdam.
+
+Also this project uses github actions for CI deployment.
 
 If you want to use a form utility we suggest you use: `react-hook-form`.
 
