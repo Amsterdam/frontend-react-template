@@ -7,7 +7,6 @@ import Footer from "./components/Footer";
 import Home from "./components/Home";
 import Map from "./components/Map";
 
-// console.log(1);
 function App() {
   return (
     <React.StrictMode>
