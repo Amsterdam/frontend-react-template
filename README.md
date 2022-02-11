@@ -1,6 +1,6 @@
 # Frontend React Template
 
-This project can be used to create a new frontend react project from scratch for projects within comunity of Amsterdam.
+This project can be used to create a new frontend react project from scratch for projects within the community of Amsterdam open source projects.
 
 Also this project uses [github actions workflows](https://github.com/Amsterdam/frontend-react-template/actions) for CI deployment.
 
