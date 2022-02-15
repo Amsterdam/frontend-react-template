@@ -1,5 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import { BrowserRouter } from "react-router-dom";
 import { GlobalStyle, ThemeProvider } from "@amsterdam/asc-ui";
 
 // import './index.css';
@@ -12,8 +13,9 @@ ReactDOM.render(
   <React.StrictMode>
     <ThemeProvider>
       <GlobalStyle />
-
-      <App />
+      <BrowserRouter>
+        <App />
+      </BrowserRouter>
     </ThemeProvider>
   </React.StrictMode>,
   document.getElementById("root"),

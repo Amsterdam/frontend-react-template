@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import { Row, Column } from "@amsterdam/asc-ui";
 
 import Header from "./components/Header";
@@ -11,7 +11,7 @@ console.log("App");
 
 function App() {
   return (
-    <Router>
+    <>
       <Row>
         <Column span={12}>
           <Header />
@@ -28,7 +28,7 @@ function App() {
       </Row>
 
       <Footer />
-    </Router>
+    </>
   );
 }
 
