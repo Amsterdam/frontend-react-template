@@ -10,7 +10,9 @@ describe("Routes", () => {
       </MemoryRouter>,
     );
 
-    expect(screen.getByTestId("home")).toBeInTheDocument();
+    expect(screen.queryByTestId("home")).toBeInTheDocument();
+
+    expect(screen.queryByTestId("map")).not.toBeInTheDocument();
   });
 
   it("route to map is defined", () => {
@@ -20,6 +22,8 @@ describe("Routes", () => {
       </MemoryRouter>,
     );
 
-    expect(screen.getByTestId("map")).toBeInTheDocument();
+    expect(screen.queryByTestId("map")).toBeInTheDocument();
+
+    expect(screen.queryByTestId("home")).not.toBeInTheDocument();
   });
 });

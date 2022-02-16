@@ -6,7 +6,7 @@ describe("Home", () => {
   it("renders correctly", () => {
     render(withTheme(<Home />));
 
-    expect(screen.getByTestId("home")).toBeInTheDocument();
-    expect(screen.getByText("Home")).toBeInTheDocument();
+    expect(screen.queryByTestId("home")).toBeInTheDocument();
+    expect(screen.queryByText("Home")).toBeInTheDocument();
   });
 });

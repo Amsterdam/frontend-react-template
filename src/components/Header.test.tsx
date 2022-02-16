@@ -13,12 +13,12 @@ describe("Header", () => {
   it("renders correctly", () => {
     render(withTheme(<Header />));
 
-    expect(screen.getByTestId("header")).toBeInTheDocument();
+    expect(screen.queryByTestId("header")).toBeInTheDocument();
 
-    expect(screen.getByText("Home")).toBeInTheDocument();
-    expect(screen.getByText("Kaart")).toBeInTheDocument();
+    expect(screen.queryByText("Home")).toBeInTheDocument();
+    expect(screen.queryByText("Kaart")).toBeInTheDocument();
 
     // home should be active now
-    expect(screen.getByTestId("header-home-button")).toHaveStyleRule('color', "#ec0000");
+    expect(screen.queryByTestId("header-home-button")).toHaveStyleRule('color', "#ec0000");
   });
 });

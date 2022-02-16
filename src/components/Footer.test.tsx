@@ -7,6 +7,6 @@ describe("Footer", () => {
   it("renders correctly", () => {
     render(withTheme(<Footer />));
 
-    expect(screen.getByTestId("footer")).toBeInTheDocument();
+    expect(screen.queryByTestId("footer")).toBeInTheDocument();
   });
 });
