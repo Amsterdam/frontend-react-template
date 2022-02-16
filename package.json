@@ -22,7 +22,7 @@
   "scripts": {
     "start": "react-scripts start",
     "lint": "eslint .",
-    "build": "react-scripts build",
+    "build": "GENERATE_SOURCEMAP=false react-scripts build",
     "test": "react-scripts test --watchAll=false",
     "test:watch": "react-scripts test",
     "eject": "react-scripts eject"
