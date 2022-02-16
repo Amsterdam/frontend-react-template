@@ -12,7 +12,7 @@ describe("Routes", () => {
 
     expect(screen.getByTestId("home")).toBeInTheDocument();
   });
-  
+
   it("route to map is defined", () => {
     render(
       <MemoryRouter initialEntries={["/kaart"]}>
