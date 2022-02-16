@@ -6,8 +6,6 @@ import { GlobalStyle, ThemeProvider } from "@amsterdam/asc-ui";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 
-console.log("index");
-
 ReactDOM.render(
   <React.StrictMode>
     <ThemeProvider>
