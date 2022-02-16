@@ -16,7 +16,7 @@ const Header = () => {
           <MenuInline>
             <MenuItem>
               {/* @ts-ignore */}
-              <MenuButton as={Link} to="/home" active={!!matchPath(location.pathname, "/home")}>
+              <MenuButton as={Link} to="/home" active={!!matchPath(location.pathname, "/home")} data-testid="header-home-button">
                 Home
               </MenuButton>
             </MenuItem>
