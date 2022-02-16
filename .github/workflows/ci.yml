@@ -22,4 +22,4 @@ jobs:
         check-latest: true
 
     - run: npm install
-    - run: npm run ${{ matrix.job }}
+    - run: GENERATE_SOURCEMAP=false npm run ${{ matrix.job }}
