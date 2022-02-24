@@ -1,9 +1,12 @@
 import React from "react";
 import { Row, Column } from "@amsterdam/asc-ui";
+import { Route, Routes } from "react-router-dom";
 
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-import Routes from "./Routes";
+
+import Home from "./pages/Home";
+import Map from "./pages/Map";
 
 function App() {
   return (
@@ -16,7 +19,10 @@ function App() {
 
       <Row>
         <Column span={12}>
-          <Routes />
+          <Routes>
+            <Route path="/home" element={<Home />} />
+            <Route path="/kaart" element={<Map />} />
+          </Routes>
         </Column>
       </Row>
 
