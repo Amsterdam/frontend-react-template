@@ -9,5 +9,3 @@ updates:
     assignees:
       - "jasperswart"
       - "janthijs"
-    allow:
-      - dependency-type: "direct"
