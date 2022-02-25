@@ -6,8 +6,7 @@ Also this project uses [github actions workflows](https://github.com/Amsterdam/f
 
 If you want to use a form utility we suggest you use: [`react-hook-form`](https://www.npmjs.com/package/react-hook-form).
 
-if you want to use keycloak? Be sure to get keycloak implementation from [blackspots]().
-
+If you want to use keycloak? Be sure to get keycloak implementation from [blackspots](https://github.com/Amsterdam/blackspots-frontend).
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
