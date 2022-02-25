@@ -28,6 +28,7 @@ const Map = () => {
     <StyledDiv data-testid="map">
       <div>
         <Heading>Kaart</Heading>
+        Marker just above the Dam square.
       </div>
 
       <div>
@@ -35,7 +36,7 @@ const Map = () => {
           <ViewerContainer bottomRight={<Zoom />} />
           <Marker
             latLng={{
-              lat: 52.3731081,
+              lat: 52.374,
               lng: 4.8932945,
             }}
           />
