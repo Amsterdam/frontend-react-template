@@ -1,0 +1,11 @@
+# Created by .ignore support plugin (hsz.mobi)
+.idea
+__pycache__
+*.pyc
+reports
+*.iml
+.env
+.jenkins/backups
+
+node_modules
+build
