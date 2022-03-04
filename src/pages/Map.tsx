@@ -2,7 +2,7 @@ import "leaflet/dist/leaflet.css";
 import styled from "styled-components";
 import { MapOptions } from "leaflet";
 import { Map as ASCMap, ViewerContainer, BaseLayer, Marker, Zoom, getCrsRd } from "@amsterdam/arm-core";
-import { Heading } from "@amsterdam/asc-ui";
+import { Heading, themeSpacing } from "@amsterdam/asc-ui";
 
 const StyledMap = styled(ASCMap)`
   width: 100%;
@@ -10,7 +10,12 @@ const StyledMap = styled(ASCMap)`
 `;
 
 const StyledDiv = styled.div`
+  margin-top: ${themeSpacing(10)};
   width: 100%;
+`;
+
+const StyledHeading = styled(Heading)`
+  margin-bottom: ${themeSpacing(5)};
 `;
 
 const mapOptions: MapOptions = {
@@ -27,7 +32,7 @@ const Map = () => {
   return (
     <StyledDiv data-testid="map">
       <div>
-        <Heading>Kaart</Heading>
+        <StyledHeading>Kaart</StyledHeading>
       </div>
 
       <div>
