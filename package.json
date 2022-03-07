@@ -47,7 +47,7 @@
     "@testing-library/user-event": "^13.5.0",
     "@types/leaflet": "^1.7.9",
     "@types/styled-components": "^5.1.24",
-    "eslint-config-prettier": "^8.4.0",
+    "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-promise": "^6.0.0",
     "jest-styled-components": "^7.0.8",
