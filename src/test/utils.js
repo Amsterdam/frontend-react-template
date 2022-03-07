@@ -1,13 +1,13 @@
 import { createMemoryHistory } from "history";
-import CustomRouter from "./CustomRouter";
 import { ThemeProvider } from "@amsterdam/asc-ui";
+import { unstable_HistoryRouter as Router } from "react-router-dom"
 
 export const history = createMemoryHistory();
 
 export const withTheme = (Component) => {
   return (
     <ThemeProvider>
-      <CustomRouter history={history}>{Component}</CustomRouter>
+      <Router history={history}>{Component}</Router>
     </ThemeProvider>
   );
 };
