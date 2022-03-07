@@ -13,6 +13,20 @@ describe("App", () => {
     expect(screen.queryByTestId("footer")).toBeInTheDocument();
   });
 
+  it("redirect from / to home is defined", () => {
+    render(
+      <ThemeProvider>
+        <MemoryRouter initialEntries={["/"]}>
+          <App />
+        </MemoryRouter>
+      </ThemeProvider>,
+    );
+
+    expect(screen.queryByTestId("home")).toBeInTheDocument();
+
+    expect(screen.queryByTestId("map")).not.toBeInTheDocument();
+  });
+
   it("route to home is defined", () => {
     render(
       <ThemeProvider>
