@@ -1,6 +1,6 @@
 import React from "react";
 import { Row, Column } from "@amsterdam/asc-ui";
-import { Route, Routes, Navigate  } from "react-router-dom";
+import { Route, Routes, Navigate } from "react-router-dom";
 
 import Header from "./components/Header";
 import Footer from "./components/Footer";
