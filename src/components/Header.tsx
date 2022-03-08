@@ -8,6 +8,7 @@ const Header = () => {
     <ASCHeader
       tall={false}
       data-testid="header"
+      title="Frontend React Template"
       homeLink="/"
       fullWidth
       css={{ zIndex: 20 }}
