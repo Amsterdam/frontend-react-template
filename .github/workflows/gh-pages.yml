@@ -2,7 +2,7 @@ name: Deploy to Github pages
 
 on:
   push:
-    branches: [master]
+    branches: [main]
 
 jobs:
   build:
@@ -26,4 +26,4 @@ jobs:
       with:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         BRANCH: gh-pages
-        FOLDER: 
+        FOLDER: stories/lib
