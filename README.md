@@ -3,10 +3,10 @@
 This project can be used to create a new frontend react project from scratch for projects within the community of Amsterdam open source projects.
 
 It includes:
-- amsterdam/asc-ui
-- amsterdam/asc-
-- amsterdam/arm-core
-- amsterdam/react-map
+- @amsterdam/asc-ui
+- @amsterdam/asc-assets
+- @amsterdam/arm-core
+- @amsterdam/react-map
 - typescript
 - jest
 - react testing lib
