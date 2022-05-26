@@ -8,6 +8,7 @@ It includes:
 - @amsterdam/arm-core
 - @amsterdam/react-map
 - typescript
+- leaflet
 - jest
 - react testing lib
 
