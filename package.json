@@ -2,6 +2,7 @@
   "name": "frontend-react-template",
   "version": "0.1.0",
   "private": false,
+  "homepage": "https://amsterdam.github.io/frontend-react-template/",
   "dependencies": {
     "@amsterdam/arm-core": "^0.9.0",
     "@amsterdam/asc-assets": "^0.28.0",
