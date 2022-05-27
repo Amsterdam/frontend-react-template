@@ -4,7 +4,7 @@
   "private": false,
   "homepage": "https://amsterdam.github.io/frontend-react-template/",
   "dependencies": {
-    "@amsterdam/arm-core": "^0.9.0",
+    "@amsterdam/arm-core": "^0.9.1",
     "@amsterdam/asc-assets": "^0.28.0",
     "@amsterdam/asc-ui": "^0.28.0",
     "@types/jest": "^27.5.1",
