@@ -1,5 +1,7 @@
 # Frontend React Template
 
+A live demo can be found here [https://amsterdam.github.io/frontend-react-template/](https://amsterdam.github.io/frontend-react-template/)
+
 This project can be used to create a new frontend react project from scratch for projects within the community of Amsterdam open source projects.
 
 It includes:
