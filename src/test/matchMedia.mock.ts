@@ -1,6 +1,7 @@
+//@ts-ignore
 Object.defineProperty(window, "matchMedia", {
   writable: true,
-  value: (query) => ({
+  value: (query: any) => ({
     matches: false,
     media: query,
     onchange: null,
