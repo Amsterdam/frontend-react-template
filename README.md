@@ -5,6 +5,8 @@
 [![TypeScript](https://badges.frapsoft.com/typescript/version/typescript-next.svg?v=101)](https://github.com/ellerbrock/typescript-badges/)
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
 [![style: styled-components](https://img.shields.io/badge/style-%F0%9F%92%85%20styled--components-orange.svg?colorB=daa357&colorA=db748e)](https://github.com/styled-components/styled-components)
+
+
 A live demo can be found here [https://amsterdam.github.io/frontend-react-template/](https://amsterdam.github.io/frontend-react-template/)
 
 This project can be used to create a new frontend react project from scratch for projects within the community of Amsterdam open source projects.
