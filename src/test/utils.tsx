@@ -1,6 +1,6 @@
 import { createMemoryHistory } from "history";
 import { ThemeProvider } from "@amsterdam/asc-ui";
-import { unstable_HistoryRouter as Router } from "react-router-dom"
+import { unstable_HistoryRouter as Router } from "react-router-dom";
 import { ReactNode } from "react";
 
 export const history = createMemoryHistory();
