@@ -2,6 +2,7 @@
   "name": "frontend-react-template",
   "version": "0.1.0",
   "private": false,
+  "homepage": "https://amsterdam.github.io/frontend-react-template/",
   "dependencies": {
     "gh-pages": "^4.0.0",
     "leaflet": "^1.8.0",
