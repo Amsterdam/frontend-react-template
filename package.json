@@ -39,7 +39,7 @@
     "@amsterdam/arm-core": "^0.9.1",
     "@amsterdam/asc-assets": "^0.28.0",
     "@amsterdam/asc-ui": "^0.28.0",
-    "@amsterdam/react-maps": "^0.12.1",
+    "@amsterdam/react-maps": "^0.12.2",
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^12.1.5",
     "@testing-library/user-event": "^14.2.0",
