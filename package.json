@@ -36,7 +36,7 @@
     ]
   },
   "devDependencies": {
-    "@amsterdam/arm-core": "^0.9.1",
+    "@amsterdam/arm-core": "^0.10.2",
     "@amsterdam/asc-assets": "^0.28.0",
     "@amsterdam/asc-ui": "^0.28.0",
     "@amsterdam/react-maps": "^0.12.2",
