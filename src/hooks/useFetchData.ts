@@ -1,6 +1,6 @@
+import { useCallback, useReducer, useMemo } from "react";
 import axios from "axios";
 import type { Reducer } from "react";
-import { useCallback, useReducer, useMemo } from "react";
 
 type Data = Record<string, unknown>;
 

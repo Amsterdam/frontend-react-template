@@ -3,6 +3,8 @@ import styled from "styled-components";
 import { MapOptions } from "leaflet";
 import { Map as ASCMap, ViewerContainer, BaseLayer, Marker, Zoom, AMSTERDAM_MAPS_OPTIONS } from "@amsterdam/arm-core";
 import { Heading, themeSpacing } from "@amsterdam/asc-ui";
+import useFetchData from "../hooks/useFetchData";
+import { useEffect } from "react";
 
 const StyledMap = styled(ASCMap)`
   width: 100%;
@@ -24,6 +26,20 @@ const mapOptions: MapOptions = {
 };
 
 const Map = () => {
+  const { data, get } = useFetchData();
+
+  useEffect(() => {
+    get("https://api.data.amsterdam.nl/v1/gebieden/stadsdelen/?_format=json");
+
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
+  useEffect(() => {
+    if (data) {
+      console.log("data", data);
+    }
+  }, [data]);
+
   return (
     <StyledDiv data-testid="map">
       <div>
