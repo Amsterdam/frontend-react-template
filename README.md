@@ -15,7 +15,6 @@ It includes:
 - @amsterdam/asc-ui
 - @amsterdam/asc-assets
 - @amsterdam/arm-core
-- @amsterdam/react-map
 - typescript
 - leaflet
 - jest
