@@ -1,12 +1,12 @@
 import "leaflet/dist/leaflet.css";
 import styled from "styled-components";
 import { MapOptions } from "leaflet";
-import { Map as ASCMap, ViewerContainer, BaseLayer, Marker, Zoom, getCrsRd } from "@amsterdam/arm-core";
+import { Map as ASCMap, ViewerContainer, BaseLayer, Marker, Zoom, AMSTERDAM_MAPS_OPTIONS } from "@amsterdam/arm-core";
 import { Heading, themeSpacing } from "@amsterdam/asc-ui";
 
 const StyledMap = styled(ASCMap)`
   width: 100%;
-  height: 400px;
+  height: 800px;
 `;
 
 const StyledDiv = styled.div`
@@ -19,13 +19,8 @@ const StyledHeading = styled(Heading)`
 `;
 
 const mapOptions: MapOptions = {
-  center: [52.3731081, 4.8932945],
+  ...AMSTERDAM_MAPS_OPTIONS,
   zoom: 10,
-  maxZoom: 16,
-  minZoom: 8,
-  zoomControl: false,
-  attributionControl: true,
-  crs: getCrsRd(),
 };
 
 const Map = () => {
