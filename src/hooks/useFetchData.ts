@@ -83,16 +83,14 @@ const useFetchData = (): FetchResponse => {
 
   const [state, dispatch] = useReducer<Reducer<State, Action>>(reducer, initialState);
 
-  const requestHeaders = useCallback(
-    () => ({
-      "Content-Type": "application/json",
-      Accept: "application/json",
-    }),
-    [],
-  );
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  const requestHeaders = {
+    "Content-Type": "application/json",
+    Accept: "application/json",
+  };
 
   const get = useCallback(
-    async (url: string, params = {}, requestOptions: Data = {}) => {
+    async (url: string, params = {}, requestOptions: any = {}) => {
       dispatch({ type: "SET_LOADING", payload: true });
 
       const arrayParams = Object.entries(params)
@@ -108,7 +106,7 @@ const useFetchData = (): FetchResponse => {
 
       try {
         const fetchResponse: any = await axios.get(requestURL, {
-          headers: requestHeaders(),
+          ...requestHeaders,
           ...requestOptions,
         });
 
@@ -132,7 +130,7 @@ const useFetchData = (): FetchResponse => {
 
   const modify = useCallback(
     (method: string) =>
-      async (url: string, modifiedData: Data = {}, requestOptions: Data = {}) => {
+      async (url: string, modifiedData: Data = {}, requestOptions: any = {}) => {
         dispatch({ type: "SET_LOADING", payload: true });
 
         let modifyResponse;
@@ -140,7 +138,7 @@ const useFetchData = (): FetchResponse => {
           switch (method) {
             case "POST":
               modifyResponse = await axios.post(url, {
-                headers: requestHeaders(),
+                ...requestHeaders,
                 body: JSON.stringify(modifiedData),
                 ...requestOptions,
               });
@@ -148,7 +146,7 @@ const useFetchData = (): FetchResponse => {
 
             case "PATCH":
               modifyResponse = await axios.patch(url, {
-                headers: requestHeaders(),
+                ...requestHeaders,
                 body: JSON.stringify(modifiedData),
                 ...requestOptions,
               });
@@ -156,7 +154,7 @@ const useFetchData = (): FetchResponse => {
 
             case "PUT":
               modifyResponse = await axios.put(url, {
-                headers: requestHeaders(),
+                ...requestHeaders,
                 body: JSON.stringify(modifiedData),
                 ...requestOptions,
               });
