@@ -116,11 +116,11 @@ const useFetchData = (): FetchResponse => {
           //@ts-ignore
           dispatch({ type: "SET_ERROR", payload: fetchResponse as FetchError });
           // eslint-disable-next-line no-console
-          console.error("fetch get error", url, fetchResponse);
+          console.error("useFetchData get error", url, fetchResponse);
         }
       } catch (exception: unknown) {
         // eslint-disable-next-line no-console
-        console.error("fetch get error", url);
+        console.error("useFetchData get error", url);
         dispatch({ type: "SET_ERROR", payload: exception as FetchError });
       }
     },
@@ -171,12 +171,12 @@ const useFetchData = (): FetchResponse => {
             });
 
             // eslint-disable-next-line no-console
-            console.error("fetch modify error", method, url, modifyResponse);
+            console.error("useFetchData modify error", method, url, modifyResponse);
           }
         } catch (exception: unknown) {
           dispatch({ type: "SET_ERROR", payload: exception as FetchError });
           // eslint-disable-next-line no-console
-          console.error("fetch modify error", method, url);
+          console.error("useFetchData modify error", method, url);
         }
       },
     [requestHeaders],
