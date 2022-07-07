@@ -21,7 +21,6 @@ const StyledMap = styled(ARMMap)`
   overflow: hidden;
 `;
 
-
 const StyledDiv = styled.div`
   margin-top: ${themeSpacing(10)};
   width: 100%;
@@ -60,6 +59,13 @@ const Map = () => {
     if (data) {
       const features = [
         {
+          ...data.features[0],
+          geometry: {
+            ...data.features[0].geometry,
+            coordinates: data.features[0].geometry.coordinates,
+          },
+        },
+        {
           ...data.features[4],
           geometry: {
             ...data.features[4].geometry,
@@ -90,7 +96,7 @@ const Map = () => {
       // newJson.features[7].geometry.coordinates = convert(newJson?.features[7]?.geometry?.coordinates);
       // newJson.features[8].geometry.coordinates = convert(newJson?.features[8]?.geometry?.coordinates);
 
-      console.log("data", data);
+      // console.log("data", data);
       console.log("newJson", newJson);
       console.log("mapOptions", mapOptions);
 
