@@ -58,6 +58,7 @@ const Map = () => {
   useEffect(() => {
     if (data) {
       const features = [
+        // zuidoost
         {
           ...data.features[0],
           geometry: {
@@ -65,6 +66,7 @@ const Map = () => {
             coordinates: data.features[0].geometry.coordinates,
           },
         },
+        // centrum
         {
           ...data.features[4],
           geometry: {
@@ -85,16 +87,6 @@ const Map = () => {
         },
         features,
       };
-
-      // newJson.features[0].geometry.coordinates = convert(newJson?.features[0]?.geometry?.coordinates);
-      // newJson.features[1].geometry.coordinates = convert(newJson?.features[1]?.geometry?.coordinates);
-      // newJson.features[2].geometry.coordinates = convert(newJson?.features[2]?.geometry?.coordinates);
-      // newJson.features[3].geometry.coordinates = convert(newJson?.features[3]?.geometry?.coordinates);
-      // newJson.features[4].geometry.coordinates = convert(newJson?.features[4]?.geometry?.coordinates);
-      // newJson.features[5].geometry.coordinates = convert(newJson?.features[5]?.geometry?.coordinates);
-      // newJson.features[6].geometry.coordinates = convert(newJson?.features[6]?.geometry?.coordinates);
-      // newJson.features[7].geometry.coordinates = convert(newJson?.features[7]?.geometry?.coordinates);
-      // newJson.features[8].geometry.coordinates = convert(newJson?.features[8]?.geometry?.coordinates);
 
       // console.log("data", data);
       console.log("newJson", newJson);
