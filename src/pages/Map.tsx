@@ -10,6 +10,7 @@ import {
   BaseLayer,
   Marker,
   Zoom,
+  getCrsRd,
   AMSTERDAM_MAPS_OPTIONS,
 } from "@amsterdam/arm-core";
 import { Heading, themeSpacing } from "@amsterdam/asc-ui";
@@ -32,6 +33,7 @@ const StyledHeading = styled(Heading)`
 
 const mapOptions: MapOptions = {
   ...AMSTERDAM_MAPS_OPTIONS,
+  crs: getCrsRd(),
   zoom: 7,
   attributionControl: false,
 };
