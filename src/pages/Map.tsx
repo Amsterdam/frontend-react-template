@@ -38,6 +38,27 @@ const mapOptions: MapOptions = {
   attributionControl: false,
 };
 
+const options = {
+    pointToLayer(feature, latlng) {
+      return L.marker(latlng, {
+        icon: L.divIcon(createFeatureIcon(feature)),
+      });
+    },
+    onEachFeature: (feature, layer) => {
+      layer.on('click', (e) => {
+        e.originalEvent.stopPropagation();
+        const latlng = {
+          lat: feature.geometry.coordinates[1],
+          lng: feature.geometry.coordinates[0],
+        };
+
+        const currentZoom = mapInstance.getZoom();
+        onMarkerClick(feature);
+        if (currentZoom < 11) mapInstance.flyTo(latlng, 11);
+      });
+    },
+  };
+
 const convertCoordinates = (coordinates: any) => {
   console.log("coordinates", coordinates);
   const newCoordinates = coordinates[0].map((c: any) => [c[1], c[0]]);
