@@ -37,7 +37,7 @@ const mapOptions: MapOptions = {
   zoom: 7,
   attributionControl: false,
 };
-
+/*
 const options = {
     pointToLayer(feature, latlng) {
       return L.marker(latlng, {
@@ -58,7 +58,7 @@ const options = {
       });
     },
   };
-
+*/
 const convertCoordinates = (coordinates: any) => {
   console.log("coordinates", coordinates);
   const newCoordinates = coordinates[0].map((c: any) => [c[1], c[0]]);
