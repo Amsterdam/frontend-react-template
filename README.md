@@ -35,10 +35,12 @@ If you want to use keycloak? Be sure to get keycloak implementation from [blacks
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-this project specifically does NOT use:
+This project specifically does NOT include. We are phasing out these dependencies:
 - `redux`
 - `saga`
-- 
+- `enzyme`
+
+
 
 ## Available Scripts
 
