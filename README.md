@@ -36,7 +36,7 @@ This project specifically does NOT include. We are phasing out these dependencie
 - `redux`
 - `saga`
 - `enzyme`
-
+- `@amsterdam/react-maps` all dependencies can be found in `@amsterdam/arm-core`
 
 
 ## Available Scripts
