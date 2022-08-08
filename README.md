@@ -15,12 +15,12 @@ It includes:
 - @amsterdam/asc-ui
 - @amsterdam/asc-assets
 - @amsterdam/arm-core
+- styled components
 - leaflet
 - react-scripts containing:
   - typescript
   - eslint
   - prettier
-  - styled components
   - jest
   - react testing library
   - lerna
