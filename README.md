@@ -17,10 +17,12 @@ It includes:
 - @amsterdam/arm-core
 - typescript
 - eslint
+- prettier
 - styled components
 - leaflet
 - jest
 - react testing library
+- lerna
 
 
 Also this project uses [github actions workflows](https://github.com/Amsterdam/frontend-react-template/actions) for CI deployment.
