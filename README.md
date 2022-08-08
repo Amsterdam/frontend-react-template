@@ -17,7 +17,7 @@ It includes:
 - `@amsterdam/arm-core`
 - `styled-components`
 - `leaflet`
-- `hooks/useFetchData` that uses `axios` with support of get, patch, post and put methods
+- `hooks/useFetchData` that uses `axios` with support for get, patch, post and put methods
 - `react-scripts`, containing:
   - `typescript`
   - `eslint`
