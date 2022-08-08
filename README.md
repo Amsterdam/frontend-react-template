@@ -15,14 +15,15 @@ It includes:
 - @amsterdam/asc-ui
 - @amsterdam/asc-assets
 - @amsterdam/arm-core
-- typescript
-- eslint
-- prettier
-- styled components
 - leaflet
-- jest
-- react testing library
-- lerna
+- react-scripts containing:
+  - typescript
+  - eslint
+  - prettier
+  - styled components
+  - jest
+  - react testing library
+  - lerna
 
 
 Also this project uses [github actions workflows](https://github.com/Amsterdam/frontend-react-template/actions) for CI deployment.
