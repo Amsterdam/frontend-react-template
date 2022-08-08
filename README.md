@@ -17,7 +17,7 @@ It includes:
 - @amsterdam/arm-core
 - styled components
 - leaflet
-- hooks/useFetchData uses axios
+- hooks/useFetchData that uses axios
 - react-scripts, containing:
   - typescript
   - eslint
