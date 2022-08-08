@@ -23,7 +23,7 @@ It includes:
   - `eslint`
   - `prettier`
   - `jest`
-  - `react testing library`
+  - `@testing-library`
   - `lerna`
 
 
