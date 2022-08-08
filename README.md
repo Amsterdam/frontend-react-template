@@ -35,6 +35,11 @@ If you want to use keycloak? Be sure to get keycloak implementation from [blacks
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+this project specifically does NOT use:
+- `redux`
+- `saga`
+- 
+
 ## Available Scripts
 
 In the project directory, you can run:
