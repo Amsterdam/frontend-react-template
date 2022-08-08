@@ -17,7 +17,7 @@ It includes:
 - @amsterdam/arm-core
 - styled components
 - leaflet
-- react-scripts containing:
+- react-scripts, containing:
   - typescript
   - eslint
   - prettier
