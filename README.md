@@ -13,18 +13,18 @@ This project can be used to create a new frontend react project from scratch for
 
 It includes:
 - `@amsterdam/asc-ui`
-- @amsterdam/asc-assets
-- @amsterdam/arm-core
-- styled components
-- leaflet
-- hooks/useFetchData that uses axios
-- react-scripts, containing:
-  - typescript
-  - eslint
-  - prettier
-  - jest
-  - react testing library
-  - lerna
+- `@amsterdam/asc-assets`
+- `@amsterdam/arm-core`
+- `styled-components`
+- `leaflet`
+- `hooks/useFetchData` that uses `axios` with support of get, push, post and delete methods
+- `react-scripts`, containing:
+  - `typescript`
+  - `eslint`
+  - `prettier`
+  - `jest`
+  - `react testing library`
+  - `lerna`
 
 
 Also this project uses [github actions workflows](https://github.com/Amsterdam/frontend-react-template/actions) for CI deployment.
