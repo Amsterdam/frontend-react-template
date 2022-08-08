@@ -16,6 +16,7 @@ It includes:
 - @amsterdam/asc-assets
 - @amsterdam/arm-core
 - typescript
+- eslint
 - styled components
 - leaflet
 - jest
