@@ -10,7 +10,6 @@ function useFetchData(config = {}) {
     setLoading(true);
     try {
       const data = await axios.get(endpoint, config);
-      console.log("data", data.data);
 
       setResults(data.data);
     } catch (e: any) {
