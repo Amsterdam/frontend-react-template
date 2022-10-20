@@ -1,12 +1,12 @@
 {
   "files": {
     "main.css": "/frontend-react-template/static/css/main.22c09306.css",
-    "main.js": "/frontend-react-template/static/js/main.2262c35b.js",
+    "main.js": "/frontend-react-template/static/js/main.d86f0546.js",
     "static/js/522.c1cd23a2.chunk.js": "/frontend-react-template/static/js/522.c1cd23a2.chunk.js",
     "index.html": "/frontend-react-template/index.html"
   },
   "entrypoints": [
     "static/css/main.22c09306.css",
-    "static/js/main.2262c35b.js"
+    "static/js/main.d86f0546.js"
   ]
 }
