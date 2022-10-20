@@ -68,33 +68,33 @@ const convertCoordinates = (coordinates: any) => {
 };
 
 const Map = () => {
-  const { data, get } = useFetchData();
+  const { results, fetchData } = useFetchData();
   const [json, setJson] = useState<GeoJSONType | undefined>();
   const [options, setOptions] = useState<GeoJSONOptions>({});
 
   useEffect(() => {
-    get("https://api.data.amsterdam.nl/v1/gebieden/stadsdelen/?_format=geojson");
+    fetchData("https://api.data.amsterdam.nl/v1/gebieden/stadsdelen/?_format=geojson");
 
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   useEffect(() => {
-    if (data) {
+    if (results) {
       const features = [
         // zuidoost
         {
-          ...data.features[0],
+          ...results.features[0],
           geometry: {
-            ...data.features[0].geometry,
-            coordinates: data.features[0].geometry.coordinates,
+            ...results.features[0].geometry,
+            coordinates: results.features[0].geometry.coordinates,
           },
         },
         // centrum
         {
-          ...data.features[4],
+          ...results.features[4],
           geometry: {
-            ...data.features[4].geometry,
-            coordinates: convertCoordinates(data.features[4].geometry.coordinates),
+            ...results.features[4].geometry,
+            coordinates: convertCoordinates(results.features[4].geometry.coordinates),
           },
         },
       ];
@@ -111,14 +111,14 @@ const Map = () => {
         features,
       };
 
-      // console.log("data", data);
+      console.log("results", results);
       console.log("newJson", newJson);
       console.log("mapOptions", mapOptions);
 
       setJson(newJson);
       setOptions({});
     }
-  }, [data]);
+  }, [results]);
 
   return (
     <StyledDiv data-testid="map">
