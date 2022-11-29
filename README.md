@@ -20,6 +20,7 @@ It includes:
   - `eslint`
   - `prettier`
   - `jest`
+  - `jest-cli`
   - `@testing-library`
   - `lerna`
 
